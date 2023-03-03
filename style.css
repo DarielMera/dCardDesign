@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@402;602;700&family=Orbitron:wght@900&family=Roboto:wght@400;700&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: darkcyan;
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+}
+
+.container {
+	color: rgba(0, 0, 0, 0.8);
+	text-align: center;
+	background-color: aquamarine;
+	padding: 10px 10px 10px 10px;
+	line-height: 2;
+	width: 300px;
+	box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 4px;
+}
+
+#emplId {
+	text-align: start;
+}
+
+.container h1 {
+	opacity: 0.6;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#conatainer-flName {
+	text-align: center;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	/* border: 4px solid rgba(0, 0, 0, 0.4); */
+	border-radius: 8px;
+	box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
+	letter-spacing: 3px;
+}
+
+#description {
+	line-height: initial;
+}
+
+#avatar-container {
+	text-align: center;
+}
+
+#avatar {
+	border-radius: 8px;
+	margin-top: 10px;
+	width: 200px;
+	height: 200px;
+	box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+#email {
+	opacity: 0.5;
+	text-align: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+	margin-top: 40px;
+}
+
+.pnBtns-container {
+}
+
+.btns {
+	border: 0;
+	padding: 10px 28px;
+	margin-top: 10px;
+	border-radius: 4px;
+	background-color: rgb(58, 154, 122);
+	color: white;
+	letter-spacing: 1.5px;
+}
+
+#btnNext:hover {
+	opacity: 0.8;
+}
+
+#btnNext:active {
+	outline: 0;
+	transform: scale(0.98);
+}
