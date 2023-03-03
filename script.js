@@ -12,7 +12,6 @@ let id = 1
 async function fetchData(id) {
 	const fetchApi = await fetch(`https://reqres.in/api/users/${id}`)
 	const res = await fetchApi.json()
-	console.log(res)
 	const fName = res.data.first_name
 	const lName = res.data.last_name
 	const description = res.support.text
