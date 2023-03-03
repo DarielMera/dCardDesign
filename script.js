@@ -8,15 +8,11 @@ const emailEle = document.getElementById("email")
 const buttonPrevEle = document.getElementById("btnPrev")
 const buttonNextEle = document.getElementById("btnNext")
 let id = 1
-// async await for my ajax request - fetch - inside a fucntion
-// keep in mind the promises thats needs to be fulfill
-// create function
 
 async function fetchData(id) {
 	const fetchApi = await fetch(`https://reqres.in/api/users/${id}`)
 	const res = await fetchApi.json()
 	console.log(res)
-	// const id = res.data.id
 	const fName = res.data.first_name
 	const lName = res.data.last_name
 	const description = res.support.text
@@ -26,8 +22,6 @@ async function fetchData(id) {
 }
 
 fetchData(id)
-
-// display the info functtion
 
 function displayInfo(id, fName, lName, avatar, description, email) {
 	idEle.innerHTML = id
@@ -40,9 +34,6 @@ function displayInfo(id, fName, lName, avatar, description, email) {
 	console.log(id, fName, lName, avatar, description, email)
 }
 
-// add button to call function
-// display next on button
-//dpending on present parameter add 1 to the parameter
 
 buttonPrevEle.addEventListener("click", prevCardInfo)
 buttonNextEle.addEventListener("click", nextCardInfo)
